@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title></title>
+<title>Bookmark Manager</title>
+
+<link rel='stylesheet' type='text/css' href='./css/style.css'>
 </head>
 
 <body>
+<div>
 <h1> Links </h1>
+<p> The smart bookmark manager </p>
+</div>
+<div class='index_links'>
 <ul id='links'>
   <% @links.each do |link| %>
   <li>
@@ -14,6 +20,7 @@
   </li>
   <% end %>
 </ul>
+</div>
 
 </body>
 </html>

@@ -3,7 +3,7 @@ require './app/models/link.rb'
 
 class BookmarkManager < Sinatra::Base
   get '/' do
-    'Hello BookmarkManager!'
+    erb :intro
   end
 
   get '/links' do
