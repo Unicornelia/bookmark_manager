@@ -1,15 +1,20 @@
 require 'data_mapper'
 require 'dm-postgres-adapter'
+require 'bcrypt'
 
 class User
   include DataMapper::Resource
 
   property :id, Serial
   property :email, String
-  property :password, Text
+  property :password_digest, Text
 
   has n, :links, through: Resource
   attr_reader :password
+
+  def password=(password)
+    self.password_digest = BCrypt::Password.create(password)
+  end
 
   @@count = 0
 

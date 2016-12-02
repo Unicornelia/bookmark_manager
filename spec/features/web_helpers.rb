@@ -1,6 +1,7 @@
 def sign_up
   visit '/sign_up_form'
-  fill_in("Email Address", with:"test@test.com")
-  fill_in("Password", with: "password")
+  expect(page.status_code).to eq(200)
+  fill_in(:email, with:"test@test.com")
+  fill_in(:password, with: "password")
   click_button("Sign Up")
 end
