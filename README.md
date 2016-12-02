@@ -1,21 +1,23 @@
-Bookmark Manager
+# Bookmark manager
+## User stories
+
 ```
 As a user
-So that I can organise my favourite sites
-I want to show a list of links on the homepage
-```
-```
-As a user
-So that I can update my bookmarks list
-I want to be able to add new links
+So that I can access my favourite sites fast
+I want to see a list of links from the database
 ```
 ```
 As a user
-So that I can categorise my bookmarks
-I want to tag links
+So that I can keep extending my database of links
+I want to be able to add new link to the list
 ```
 ```
 As a user
-So that I can quickly find topics
-I want to be able to filter tags
+So that I can look up links based on certain criteria
+I want to add tags to the links
+```
+```
+As a user
+So I can list my specific links based on keywords
+I want to be able to filter by their tags
 ```
