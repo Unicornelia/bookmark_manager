@@ -1,6 +1,6 @@
 <h1>Links</h1>
 
-<h2>Welcome!</h2>
+<h2>Welcome! <%= @user ? @user.email : 'Visitor' %></h2>
 
 <ul id='links'>
   <% @links.each do |link| %>

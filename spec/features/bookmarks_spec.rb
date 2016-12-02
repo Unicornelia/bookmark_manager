@@ -15,11 +15,10 @@ feature "Homepage", :feature => :type do
     end
   end
 
-  describe User do
-    subject (:user) {described_class.new}
-      it 'user count increases after signing up' do
-        sign_up
-        expect{user.increment}.to change{user.count}.by(1)
-      end
-  end
+  # describe User do
+  #   subject (:user) {described_class.new(params)}
+  #     it 'user count increases after signing up' do
+  #       sign_up
+  #     end
+  # end
 end

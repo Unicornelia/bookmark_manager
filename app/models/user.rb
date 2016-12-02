@@ -4,11 +4,12 @@ require 'dm-postgres-adapter'
 class User
   include DataMapper::Resource
 
-  has n, :links, through: Resource
-
   property :id, Serial
   property :email, String
   property :password, Text
+
+  has n, :links, through: Resource
+  attr_reader :password
 
   @@count = 0
 
@@ -16,7 +17,12 @@ class User
     @@count
   end
 
-  def increment
+
+  def initialize(params)
+    self.password = params[:password]
+    self.password = params[:password_confirm]
+    self.email = params[:email]
+    self.save
     @@count += 1
   end
 
