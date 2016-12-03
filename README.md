@@ -2,12 +2,12 @@
 
 ### Skills
 
-Designing data relationships using an object-relational mapper
-Designing a database schema
-Manipulating data using the CRUD cycle
-Structuring more complex MVC applications
-Refactoring more complex apps
-Creating user stories
+- Designing data relationships using an object-relational mapper
+- Designing a database schema
+- Manipulating data using the CRUD cycle
+- Structuring more complex MVC applications
+- Refactoring more complex apps
+- Creating user stories
 
 ## User stories
 
