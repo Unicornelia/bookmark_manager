@@ -1,5 +1,4 @@
 # Bookmark manager
-## User stories
 
 ### Skills
 
@@ -10,6 +9,7 @@ Structuring more complex MVC applications
 Refactoring more complex apps
 Creating user stories
 
+## User stories
 
 ```
 As a user

@@ -1,6 +1,5 @@
 feature "Sign Up" do
 
-
 let(:email) { 'test@test.com' }
 let(:password) { 'iloveunicorns' }
 
